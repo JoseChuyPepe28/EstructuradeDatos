@@ -6,16 +6,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Label layoutX="138.0" layoutY="25.0" text="Primer Programa">
+      <Label fx:id="lbltittle" layoutX="138.0" layoutY="25.0" text="Primer Programa">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <TextField layoutX="26.0" layoutY="70.0" />
+      <TextField fx:id="txtedad" layoutX="26.0" layoutY="70.0" />
       <Label layoutX="35.0" layoutY="48.0" text="Inserta edad" />
-      <Button layoutX="188.0" layoutY="70.0" mnemonicParsing="false" text="Aceptar" />
+      <Button layoutX="188.0" layoutY="70.0" mnemonicParsing="false" onAction="#evento" text="Aceptar" textOverrun="LEADING_WORD_ELLIPSIS" />
    </children>
 </AnchorPane>
