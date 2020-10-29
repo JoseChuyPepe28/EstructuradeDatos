@@ -60,7 +60,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectId" id="1iCXRHxVSbLiJgy1dvuXxFkJnQD" />
+  <component name="ProjectId" id="1jWIAvLWj6gFWCr31QQyO4Xj3Jj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
@@ -81,10 +81,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Libreria/out/artifacts/Libreria_jar/Libreria.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RunManager">
@@ -115,7 +111,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
-      <module name="Estructura" />
+      <module name="ClassMath" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -178,9 +174,8 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1601412572191" duration="1704000" />
-      <workItem from="1601664443147" duration="332000" />
-      <workItem from="1601909281210" duration="19000" />
+      <workItem from="1603913297343" duration="541000" />
+      <workItem from="1603989140429" duration="4064000" />
     </task>
     <servers />
   </component>
@@ -192,37 +187,21 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1154" y="239" key="DetectedRootsChooserDialog" timestamp="1601664495468">
+    <state x="1156" y="269" key="FileChooserDialogImpl" timestamp="1603992761932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1154" y="239" key="DetectedRootsChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601664495468" />
-    <state x="1106" y="265" key="FileChooserDialogImpl" timestamp="1601664505324">
+    <state x="1156" y="269" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603992761932" />
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1603989146977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1106" y="265" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601664505324" />
-    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1601664780112">
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603989146977" />
+    <state x="685" y="232" key="new project wizard" timestamp="1603992839179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601664780112" />
-    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1601664780112">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601664780112" />
-    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1601664780112">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601664780112" />
-    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1601664780112">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601664780112" />
-    <state x="880" y="98" key="SettingsEditor" timestamp="1601664517832">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="880" y="98" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601664517832" />
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1601909284299">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601909284299" />
+    <state x="685" y="232" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1603992839179" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
 </project>
