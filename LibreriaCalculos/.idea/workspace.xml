@@ -44,6 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603992844912</updated>
       <workItem from="1603992860895" duration="1373000" />
+      <workItem from="1604532689605" duration="155000" />
     </task>
     <servers />
   </component>
@@ -59,13 +60,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1130" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603994084168" />
-    <state x="1220" y="265" key="FileChooserDialogImpl" timestamp="1603994122525">
+    <state x="1220" y="265" key="FileChooserDialogImpl" timestamp="1604532833068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="265" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603994122525" />
+    <state x="1220" y="265" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604532833068" />
     <state x="715" y="119" key="SettingsEditor" timestamp="1603994093472">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="119" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603994093472" />
+    <state x="1148" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1604532718540">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1148" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604532718540" />
+    <state x="342" y="147" key="new project wizard" timestamp="1604532837091">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="147" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1604532837091" />
   </component>
 </project>
