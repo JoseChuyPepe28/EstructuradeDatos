@@ -2,12 +2,14 @@ package sample;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import sample.Estructura.Busqueda;
 import sample.Estructura.ItemPedidos;
 import sample.Estructura.Pedido;
 
@@ -22,9 +24,15 @@ import java.util.Stack;
 public class ControllerCobro {
     @FXML ComboBox cmbPlatillos, cmbBebidas, cmbOpc;
     @FXML TableView tabla;
-    @FXML TextField  txtNombre;
+    @FXML TextField  txtNombre,txtVenta;
     @FXML Label nombrePedido;
     @FXML Spinner<Integer> cantP, cantB;
+    @FXML Label txtNombreUser,lblVentas;
+    int[] ventas=new int[5];
+
+
+
+
     final int initialvalue=1;
     SpinnerValueFactory<Integer> num=new SpinnerValueFactory.IntegerSpinnerValueFactory(1,99,initialvalue);
     final int initialvalue2=1;
@@ -41,25 +49,50 @@ public class ControllerCobro {
     ObservableList<Pedido> listaPedidos= FXCollections.observableArrayList();
     Queue<ItemPedidos> cola=new LinkedList<>();
 
+    String[][]pizzaPla={
+            {"Peperoni","100"},
+            {"Chicago","120"},
+            {"Hawuallana","110"},
+            {"Queso","99"},
+            {"Orilla de Queso","140"}
+    };
+
+    String[][]bebida={
+            {"Coca Cola 2Lts","40"},
+            {"Peñafiel 2Lts","30"},
+            {"Fanta 2Lts","30"},
+            {"Spite 2Lts","30"},
+            {"Coca Cola 1Lts","20"}
+    };
+
 
 
     @FXML protected void initialize(){
+        txtNombreUser.setText(Main.nombreUsuario);
         columnaBebida.setCellValueFactory(new PropertyValueFactory<Pedido, String>("bebida"));
         columnaCantBebida.setCellValueFactory(new PropertyValueFactory<Pedido, String>("cantbebida"));
         columnaPlatillos.setCellValueFactory(new PropertyValueFactory<Pedido, String>("platillo"));
         columnaCantPlatillos.setCellValueFactory(new PropertyValueFactory<Pedido, String>("cantplatillo"));
         tabla.getColumns().addAll(columnaBebida, columnaCantBebida,columnaPlatillos,columnaCantPlatillos);
         tabla.setItems(listaPedidos);
-        listaBebidas.add("Coca Cola 2Lts");
-        listaBebidas.add("Peñafiel 2Lts");
-        listaBebidas.add("Fanta 2Lts");
-        listaBebidas.add("Sprite 2Lts");
-        listaBebidas.add("Coca Cola 1Lts");
-        listaPlatillos.add("Peperoni");
-        listaPlatillos.add("Chicago");
-        listaPlatillos.add("Hawuallana");
-        listaPlatillos.add("Queso");
-        listaPlatillos.add("Orilla Queso");
+        for (int x=0;x<bebida.length;x++){
+            listaBebidas.add(bebida[x][0]);
+        }
+
+        //listaBebidas.add("Coca Cola 2Lts");
+        //listaBebidas.add("Peñafiel 2Lts");
+        //listaBebidas.add("Fanta 2Lts");
+        //listaBebidas.add("Sprite 2Lts");
+        //listaBebidas.add("Coca Cola 1Lts");
+
+        for (int x=0;x<pizzaPla.length;x++){
+            listaPlatillos.add(pizzaPla[x][0]);
+        }
+        //listaPlatillos.add("Peperoni");
+        //listaPlatillos.add("Chicago");
+        //listaPlatillos.add("Hawuallana");
+        //listaPlatillos.add("Queso");
+        //listaPlatillos.add("Orilla Queso");
 
         listaOpciones.add("Luis Peña");
         listaOpciones.add("Mesero 2");
@@ -134,10 +167,40 @@ public class ControllerCobro {
         }
 
     }
+    int cont=0;
+    public void insertarVenta(ActionEvent event){
+        ventas[cont]=Integer.parseInt(txtVenta.getText().toString());
+        cont++;
+        txtVenta.setText("");
+    }
+    public void ordenarVenta(ActionEvent event){
+        Busqueda ordenar=new Busqueda();
+        int[] ordenado=ordenar.burbuja(ventas);
+        String todo="";
+        for (int x=0;x<ordenado.length;x++)todo=todo+", "+ordenado[x];
+        lblVentas.setText(todo);
+    }
+    public void ordenarPlatillos(ActionEvent event){
+        Busqueda ordenar = new Busqueda();
+        cmbPlatillos.getItems().clear();
+        listaPlatillos.clear();
+        String[][]ordenado =ordenar.burbujaArray(pizzaPla);
+        for (int x=0;x<ordenado.length;x++){
+            listaPlatillos.add(ordenado[x][0]);
+            cmbPlatillos.getItems().add(ordenado[x][0]);
+        }
+
+        Busqueda ordenarBebidas = new Busqueda();
+        cmbBebidas.getItems().clear();
+        listaBebidas.clear();
+        String[][]ordenadoBebidas =ordenar.burbujaArrayBebidas(bebida);
+        for (int x=0;x<ordenadoBebidas.length;x++){
+            listaBebidas.add(ordenadoBebidas[x][0]);
+            cmbBebidas.getItems().add(ordenadoBebidas[x][0]);
+        }
 
 
-
-
+    }
 
 }
 

@@ -44,7 +44,7 @@
                   <Insets top="10.0" />
                </HBox.margin>
             </ImageView>
-            <Label fx:id="txtname" prefHeight="17.0" prefWidth="150.0" text="Luis Peña" textFill="WHITE">
+            <Label fx:id="txtNombreUser" prefHeight="17.0" prefWidth="150.0" text="Luis Peña" textFill="WHITE">
                <HBox.margin>
                   <Insets right="1.0" top="20.0" />
                </HBox.margin>
@@ -118,6 +118,14 @@
                   <Insets top="10.0" />
                </VBox.margin>
             </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txtVenta" />
+                  <Button mnemonicParsing="false" onAction="#insertarVenta" text="Insertar" />
+                  <Button mnemonicParsing="false" onAction="#ordenarVenta" text="Ordenar" />
+                  <Label fx:id="lblVentas" text="Label" />
+               </children>
+            </HBox>
          </children>
       </VBox>
    </center>
@@ -162,6 +170,11 @@
                   </Spinner>
                </children>
             </HBox>
+            <Button mnemonicParsing="false" onAction="#ordenarPlatillos" prefHeight="25.0" prefWidth="137.0" text="Ordenar X Precio" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </Button>
             <Button mnemonicParsing="false" onAction="#insertarPedido" prefHeight="25.0" prefWidth="111.0" styleClass="bttn2" text="Insertar" textFill="WHITE">
                <VBox.margin>
                   <Insets left="30.0" right="30.0" top="5.0" />
